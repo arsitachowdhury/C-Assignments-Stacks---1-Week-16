@@ -1,0 +1,16 @@
+What does this function do ?
+
+   void fun(int n){
+   stack<int> s;
+   while (n > 0){
+     s.push(n%2);
+     n = n/2;
+    }
+   while (!s.empty()){
+     cout<<s.top();
+     s.pop();
+    }
+}
+
+Answer:-
+Prints binary representation of n.
